@@ -20,7 +20,7 @@ export default createMuiTheme({
     typography: {
         h1: {
             fontFamily: "Pacifico",
-            fontSize: "3rem"
+            fontSize: "2.5rem"
         },
         text: {
             color: textColor,

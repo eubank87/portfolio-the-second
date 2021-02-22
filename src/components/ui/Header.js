@@ -6,6 +6,8 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import {makeStyles} from "@material-ui/styles";
 import { useTheme } from "@material-ui/core/styles";
 
+import daisy from "../../assets/daisy.svg";
+
 function ElevationScroll(props) {
     const { children, window } = props;
 
@@ -17,11 +19,17 @@ function ElevationScroll(props) {
     return React.cloneElement(children, {
       elevation: trigger ? 4 : 0,
     });
-  }
+}
   
 
 const useStyles = makeStyles(theme => ({
-    
+    toolbarMargin: {
+        ...theme.mixins.toolbar,
+        marginBottom: "4em"
+    },
+    logo: {
+        height: "7em"
+    }
 }))
 
 export default function Header(){
@@ -31,12 +39,13 @@ export default function Header(){
     return (
         <React.Fragment>
             <ElevationScroll>
-                <Appbar>
-                    <Toolbar>
-                        <Typography>Ashley Eubank</Typography>
+                <Appbar position="fixed">
+                    <Toolbar disableGutters>
+                        <img src={daisy} className={classes.logo}/>
                     </Toolbar>
                 </Appbar>
             </ElevationScroll>
+            <div className={classes.toolbarMargin} />
         </React.Fragment>
     )
 }
