@@ -45,7 +45,7 @@ export default function HomePage(){
                     item>
                         <Typography align="center" 
                         variant="h2">
-                            Ashley Eubank <br/> Full Stack Web Developer
+                            Contact
                         </Typography>
                     </Grid>
                 </Grid>
