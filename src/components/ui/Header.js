@@ -100,7 +100,6 @@ export default function Header(){
         setValue(value)
     }
 
-
     useEffect(()=> {
         if(window.location.pathname === "/" && value !== 0){
             setValue(0)
@@ -111,6 +110,7 @@ export default function Header(){
         } else if(window.location.pathname === "/contact" && value !== 3){
             setValue(3)
         }
+
     }, [value])
 
     const tabs = (
