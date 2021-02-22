@@ -6,6 +6,20 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import {makeStyles} from "@material-ui/styles";
 import { useTheme } from "@material-ui/core/styles";
 
+function ElevationScroll(props) {
+    const { children, window } = props;
+
+    const trigger = useScrollTrigger({
+      disableHysteresis: true,
+      threshold: 0
+    });
+  
+    return React.cloneElement(children, {
+      elevation: trigger ? 4 : 0,
+    });
+  }
+  
+
 const useStyles = makeStyles(theme => ({
     
 }))
@@ -16,11 +30,13 @@ export default function Header(){
 
     return (
         <React.Fragment>
-            <Appbar>
-                <Toolbar>
-                    <Typography>Ashley Eubank</Typography>
-                </Toolbar>
-            </Appbar>
+            <ElevationScroll>
+                <Appbar>
+                    <Toolbar>
+                        <Typography>Ashley Eubank</Typography>
+                    </Toolbar>
+                </Appbar>
+            </ElevationScroll>
         </React.Fragment>
     )
 }

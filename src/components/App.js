@@ -7,10 +7,8 @@ import theme from "./ui/Theme";
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-        <Header/>
-        <h1>Portfolio The Second</h1>
-      </div>
+      <Header/>
+      <h1>Portfolio The Second</h1>
     </ThemeProvider>
   );
 }
