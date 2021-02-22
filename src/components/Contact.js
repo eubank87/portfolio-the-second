@@ -37,7 +37,7 @@ export default function HomePage(){
         <Grid container className={classes.mainContainer} direction="column">
             <Grid item>
             <Grid container 
-                justify="flex-end" 
+                justify="center" 
                 alignItems="center" 
                 direction="row">
                     <Grid sm
