@@ -44,8 +44,11 @@ export default function HomePage(){
                     className={classes.heroTextContainer} 
                     item>
                         <Typography align="center" 
-                        variant="h2">
-                            Ashley Eubank <br/> Full Stack Web Developer
+                        variant="h1" style={{marginBottom: "1em"}}>
+                            Ashley Eubank
+                        </Typography>
+                        <Typography align="center" style={{fontSize: "2rem"}}>
+                            Full Stack Web Developer
                         </Typography>
                     </Grid>
                 </Grid>

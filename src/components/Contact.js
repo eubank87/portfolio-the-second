@@ -44,7 +44,7 @@ export default function HomePage(){
                     className={classes.heroTextContainer} 
                     item>
                         <Typography align="center" 
-                        variant="h2">
+                        variant="h1">
                             Contact
                         </Typography>
                     </Grid>

@@ -59,14 +59,19 @@ export default function HomePage(){
                 <Grid container 
                     justify="center" 
                     alignItems="center" 
-                    direction="row">
+                    direction="column">
                     <Grid sm
                         className={classes.heroTextContainer} 
                         item>
                         <Typography align="center" 
-                        variant="h2">
+                        variant="h1">
                             Portfolio
                         </Typography>
+                    </Grid>
+                    <Grid itm sm>
+                        <Button style={{marginTop: "1em", marginBottom: "1em"}} color="primary" component={"a"} href="https://drive.google.com/file/d/1lZV4FxVFLATFBqLobR_L50x7h4Rexh0V/view?usp=sharing" rel="noopener noreferrer" target="_blank">
+                            Professional Resume
+                        </Button>
                     </Grid>
                 </Grid>
 
