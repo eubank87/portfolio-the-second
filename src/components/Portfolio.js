@@ -41,6 +41,11 @@ const useStyles = makeStyles(theme=> ({
     cardImg: {
         height: "20em",
         width: "100%"
+    },
+    card: {
+        [theme.breakpoints.down("sm")]: {
+            borderRadius: 0
+        }
     }
 }))
 
@@ -71,7 +76,7 @@ export default function HomePage(){
                     alignItems="center" 
                     direction="row">
                     <Grid item md={4}>
-                        <Card className={classes.root}>
+                        <Card className={classes.root, classes.card}>
                             <CardActionArea>
                                 <CardMedia className={classes.media}>
                                     <img src={budget} className={classes.cardImg} alt="budget tracking app"/>
@@ -86,18 +91,18 @@ export default function HomePage(){
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Button size="small" color="primary">
-                                    Share
+                                <Button size="small" color="primary" component={"a"} href="https://budget-ballin.herokuapp.com/" rel="noopener noreferrer" target="_blank">
+                                    Visit Site
                                 </Button>
-                                <Button size="small" color="primary">
-                                 Learn More
+                                <Button size="small" color="primary" component={"a"} href="https://github.com/eubank87/pwa-budget-tracker" rel="noopener noreferrer" target="_blank">
+                                 Github Repo
                                 </Button>
                             </CardActions>
                         </Card>
                     </Grid>
                   
                     <Grid item md={4}>
-                        <Card className={classes.root}>
+                        <Card className={classes.root, classes.card}>
                             <CardActionArea>
                                 <CardMedia className={classes.media}>
                                     <img src={fridge} className={classes.cardImg} alt="recipe app"/>
@@ -112,11 +117,11 @@ export default function HomePage(){
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Button size="small" color="primary">
-                                    Share
+                                <Button size="small" color="primary" component={"a"} href="https://cryptic-shore-39350.herokuapp.com/" rel="noopener noreferrer" target="_blank">
+                                    Visit Site
                                 </Button>
-                                <Button size="small" color="primary">
-                                 Learn More
+                                <Button size="small" color="primary" component={"a"} href="https://github.com/lbalbrecht/check-your-fridge" rel="noopener noreferrer" target="_blank">
+                                 Github Repo
                                 </Button>
                             </CardActions>
                         </Card>
@@ -129,7 +134,7 @@ export default function HomePage(){
                     alignItems="center" 
                     direction="row">
                     <Grid item md={4}>
-                        <Card className={classes.root}>
+                        <Card className={classes.root, classes.card}>
                             <CardActionArea>
                                 <CardMedia className={classes.media}>
                                     <img src={employee} className={classes.cardImg} alt="employee directory app"/>
@@ -144,18 +149,18 @@ export default function HomePage(){
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Button size="small" color="primary">
-                                    Share
+                                <Button size="small" color="primary" component={"a"} href="https://finding-employees.herokuapp.com/" rel="noopener noreferrer" target="_blank">
+                                    Visit Site
                                 </Button>
-                                <Button size="small" color="primary">
-                                 Learn More
+                                <Button size="small" color="primary" component={"a"} href="https://github.com/eubank87/employee-finder" rel="noopener noreferrer" target="_blank">
+                                 Github Repo
                                 </Button>
                             </CardActions>
                         </Card>
                     </Grid>
                   
                     <Grid item md={4}>
-                        <Card className={classes.root}>
+                        <Card className={classes.root, classes.card}>
                             <CardActionArea>
                                 <CardMedia className={classes.media}>
                                     <img src={burger} className={classes.cardImg} alt="burger maker app"/>
@@ -170,11 +175,11 @@ export default function HomePage(){
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Button size="small" color="primary">
-                                    Share
+                                <Button size="small" color="primary" component={"a"} href="https://not-bobs-burgers.herokuapp.com/" rel="noopener noreferrer" target="_blank">
+                                    Visit Site
                                 </Button>
-                                <Button size="small" color="primary">
-                                 Learn More
+                                <Button size="small" color="primary" component={"a"} href="https://github.com/eubank87/express-burger" rel="noopener noreferrer" target="_blank">
+                                 Github Repo
                                 </Button>
                             </CardActions>
                         </Card>
@@ -187,7 +192,7 @@ export default function HomePage(){
                     alignItems="center" 
                     direction="row">
                     <Grid item md={4}>
-                        <Card className={classes.root}>
+                        <Card className={classes.root, classes.card}>
                             <CardActionArea>
                                 <CardMedia className={classes.media}>
                                     <img src={notes} className={classes.cardImg} alt="Note taking app"/>
@@ -202,18 +207,18 @@ export default function HomePage(){
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Button size="small" color="primary">
-                                    Share
+                                <Button size="small" color="primary" component={"a"} href="https://note-taking-master.herokuapp.com/" rel="noopener noreferrer" target="_blank">
+                                    Visit Site
                                 </Button>
-                                <Button size="small" color="primary">
-                                 Learn More
+                                <Button size="small" color="primary" component={"a"} href="https://github.com/eubank87/express-note-taker" rel="noopener noreferrer" target="_blank">
+                                 Github Repo
                                 </Button>
                             </CardActions>
                         </Card>
                     </Grid>
                   
                     <Grid item md={4}>
-                        <Card className={classes.root}>
+                        <Card className={classes.root, classes.card}>
                             <CardActionArea>
                                 <CardMedia className={classes.media}>
                                     <img src={generator} className={classes.cardImg} alt="team generator app"/>
@@ -228,11 +233,11 @@ export default function HomePage(){
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Button size="small" color="primary">
-                                    Share
+                                <Button size="small" color="primary" component={"a"} href="https://github.com/eubank87/team-profile-generator" rel="noopener noreferrer" target="_blank">
+                                    Github Repo
                                 </Button>
-                                <Button size="small" color="primary">
-                                 Learn More
+                                <Button size="small" color="primary" component={"a"} href="https://www.youtube.com/watch?v=2Oh3wQhvixQ&feature=youtu.be" rel="noopener noreferrer" target="_blank">
+                                 Instructional Video
                                 </Button>
                             </CardActions>
                         </Card>
