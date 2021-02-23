@@ -8,6 +8,7 @@ import Home from "./Home";
 import About from "./About";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
+import Footer from "./ui/Footer";
 
 function App() {
   const [value, setValue] = useState(0);
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/portfolio" render={(props) => <Portfolio {...props} setValue={setValue}/>}/>
           <Route exact path="/contact" render={(props) => <Contact {...props} setValue={setValue}/>}/>
         </Switch>
+        <Footer/>
       </BrowserRouter>
     </ThemeProvider>
   );

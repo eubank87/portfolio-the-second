@@ -8,6 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 import budget from "../assets/Budget_Ballin.gif";
 import fridge from "../assets/CheckYourFridge.gif";
@@ -51,6 +52,7 @@ const useStyles = makeStyles(theme=> ({
 export default function HomePage(){
     const classes = useStyles();
     const theme = useTheme();
+    const matchesXS = useMediaQuery(theme.breakpoints.down("xs"));
 
     return(
         <Grid container className={classes.mainContainer} direction="column">
@@ -76,7 +78,7 @@ export default function HomePage(){
 
                 <Grid container
                     justify="center" 
-                    spacing={4}
+                    spacing={matchesXS ? 0 : 4}
                     alignItems="center" 
                     direction="row">
                     <Grid item md={4}>
@@ -134,7 +136,7 @@ export default function HomePage(){
 
                 <Grid container
                     justify="center" 
-                    spacing={4}
+                    spacing={matchesXS ? 0 : 4}
                     alignItems="center" 
                     direction="row">
                     <Grid item md={4}>
@@ -192,7 +194,7 @@ export default function HomePage(){
 
                 <Grid container
                     justify="center" 
-                    spacing={4}
+                    spacing={matchesXS ? 0 : 4}
                     alignItems="center" 
                     direction="row">
                     <Grid item md={4}>

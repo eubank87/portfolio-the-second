@@ -7,6 +7,7 @@ import bioPic from "../assets/ashley.jpg";
 
 const useStyles = makeStyles(theme=> ({
     mainContainer: {
+        height: "600px",
         marginTop: "5em",
         [theme.breakpoints.down("md")]: {
             marginTop: "3em"
