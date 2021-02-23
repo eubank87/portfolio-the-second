@@ -12,7 +12,8 @@ const useStyles = makeStyles(theme=> ({
             marginTop: "3em"
         },
         [theme.breakpoints.down("xs")]: {
-            marginTop: "2em"
+            marginTop: "2em",
+            marginLeft: 0
         }
     },
     heroTextContainer: {
