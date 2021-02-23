@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { ThemeProvider } from '@material-ui/styles';
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {HashRouter, Route, Switch} from "react-router-dom";
 
 import Header from "./ui/Header";
 import theme from "./ui/Theme";
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <HashRouter basename="/portfolio-the-second">
         <Header value={value} 
         setValue={setValue}/>
         <Switch>
@@ -25,7 +25,7 @@ function App() {
           <Route exact path="/contact" render={(props) => <Contact {...props} setValue={setValue}/>}/>
         </Switch>
         <Footer/>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }
