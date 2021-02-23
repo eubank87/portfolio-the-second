@@ -21,6 +21,7 @@ const useStyles = makeStyles(theme=> ({
         }
     },
     heroTextContainer: {
+        marginBottom: "3em",
         minWidth: "21.5em",
         marginLeft: "1em",
         [theme.breakpoints.down("xs")]: {
@@ -36,17 +37,28 @@ export default function HomePage(){
     return(
         <Grid container className={classes.mainContainer} direction="column">
             <Grid item>
-            <Grid container 
-                justify="center" 
-                alignItems="center" 
-                direction="row">
+                <Grid container 
+                    justify="center" 
+                    alignItems="center" 
+                    direction="row">
                     <Grid sm
-                    className={classes.heroTextContainer} 
-                    item>
+                        className={classes.heroTextContainer} 
+                        item>
                         <Typography align="center" 
                         variant="h1">
                             Contact
                         </Typography>
+                    </Grid>
+                </Grid>
+                <Grid justify="center" container>
+                    <Grid item>
+                        <Card style={{backgroundColor: theme.palette.common.main}}>
+                            <CardContent>
+                                <Typography>Email: eubank.ashley@gmail.com</Typography>
+                                <br></br>
+                                <Typography>Phone: (480) 231-7775</Typography>
+                            </CardContent>
+                        </Card>
                     </Grid>
                 </Grid>
             </Grid>

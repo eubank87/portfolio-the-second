@@ -1,9 +1,7 @@
 import React from "react";
 import {makeStyles, useTheme} from "@material-ui/core/styles";
-import {Link} from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 import bioPic from "../assets/ashley.jpg";
 
