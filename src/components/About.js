@@ -25,7 +25,6 @@ const useStyles = makeStyles(theme=> ({
         }
     },
     aboutText: {
-        textAlign: "center",
         paddingRight: "10em",
         paddingLeft: "10em",
         [theme.breakpoints.down("md")]: {
@@ -34,7 +33,15 @@ const useStyles = makeStyles(theme=> ({
         },
         [theme.breakpoints.down("sm")]: {
             paddingRight: "1em",
-            paddingLeft: "1em"
+            paddingLeft: "1em",
+            textAlign: "center"
+        }
+    },
+    imgContainer: {
+        marginLeft: "4em",
+        marginTop: "0.5em",
+        [theme.breakpoints.down("sm")]: {
+            marginLeft: 0
         }
     }
 }))
@@ -65,7 +72,7 @@ export default function HomePage(){
                 direction="row"
                     justify="center" 
                     alignItems="center">
-                        <Grid item style={{marginLeft: "4em"}}>
+                        <Grid item className={classes.imgContainer}>
                         <img style={{height: "20em"}} src={bioPic}/>
                         </Grid>
                     <Grid item className={classes.aboutText} md>
