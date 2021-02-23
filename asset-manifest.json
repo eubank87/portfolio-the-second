@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/portfolio-the-second/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/portfolio-the-second/static/js/main.532c1bb8.chunk.js",
+    "main.js.map": "/portfolio-the-second/static/js/main.532c1bb8.chunk.js.map",
+    "runtime-main.js": "/portfolio-the-second/static/js/runtime-main.00a7c08d.js",
+    "runtime-main.js.map": "/portfolio-the-second/static/js/runtime-main.00a7c08d.js.map",
+    "static/css/2.150d169a.chunk.css": "/portfolio-the-second/static/css/2.150d169a.chunk.css",
+    "static/js/2.f4d7dc9a.chunk.js": "/portfolio-the-second/static/js/2.f4d7dc9a.chunk.js",
+    "static/js/2.f4d7dc9a.chunk.js.map": "/portfolio-the-second/static/js/2.f4d7dc9a.chunk.js.map",
+    "static/js/3.c2b855c4.chunk.js": "/portfolio-the-second/static/js/3.c2b855c4.chunk.js",
+    "static/js/3.c2b855c4.chunk.js.map": "/portfolio-the-second/static/js/3.c2b855c4.chunk.js.map",
+    "index.html": "/portfolio-the-second/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/portfolio-the-second/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/portfolio-the-second/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.f4d7dc9a.chunk.js.LICENSE.txt": "/portfolio-the-second/static/js/2.f4d7dc9a.chunk.js.LICENSE.txt",
+    "static/media/Budget_Ballin.e8ae9826.gif": "/portfolio-the-second/static/media/Budget_Ballin.e8ae9826.gif",
+    "static/media/CheckYourFridge.8fd4c0e6.gif": "/portfolio-the-second/static/media/CheckYourFridge.8fd4c0e6.gif",
+    "static/media/EmployeeFinder.43de338d.gif": "/portfolio-the-second/static/media/EmployeeFinder.43de338d.gif",
+    "static/media/ExpressBurgers.956e42fc.gif": "/portfolio-the-second/static/media/ExpressBurgers.956e42fc.gif",
+    "static/media/NoteTaker.c04a3ac4.gif": "/portfolio-the-second/static/media/NoteTaker.c04a3ac4.gif",
+    "static/media/Team_Generator.1dc1e2b8.gif": "/portfolio-the-second/static/media/Team_Generator.1dc1e2b8.gif",
+    "static/media/ashley.88f42f2d.jpg": "/portfolio-the-second/static/media/ashley.88f42f2d.jpg",
+    "static/media/daisy.svg": "/portfolio-the-second/static/media/daisy.e97c84df.svg",
+    "static/media/github.fa0212fe.svg": "/portfolio-the-second/static/media/github.fa0212fe.svg",
+    "static/media/linkedin.bdd46eac.svg": "/portfolio-the-second/static/media/linkedin.bdd46eac.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.00a7c08d.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.f4d7dc9a.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.532c1bb8.chunk.js"
+  ]
+}
