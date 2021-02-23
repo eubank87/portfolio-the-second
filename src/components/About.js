@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
-import flowers from "../assets/flower_background.jpg";
+import bioPic from "../assets/ashley.jpg";
 
 const useStyles = makeStyles(theme=> ({
     mainContainer: {
@@ -62,9 +62,13 @@ export default function HomePage(){
             </Grid>
             <Grid item>
                 <Grid container
+                direction="row"
                     justify="center" 
                     alignItems="center">
-                    <Grid item className={classes.aboutText}>
+                        <Grid item style={{marginLeft: "4em"}}>
+                        <img style={{height: "20em"}} src={bioPic}/>
+                        </Grid>
+                    <Grid item className={classes.aboutText} md>
                         <Typography paragraph>
                         Full stack web developer with a certificate from the University of Washington, eager to find a career where creativity and people skills can thrive.
                         </Typography>
